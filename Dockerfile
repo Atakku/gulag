@@ -21,6 +21,7 @@ RUN pip install -r requirements.txt
 
 # Temporary workaround
 RUN touch /var/run/nginx.pid
+RUN mkdir /var/run/mysqld/ && touch /var/run/mysqld/mysqld.pid
 
 # Create and switch to the workdir
 RUN mkdir /gulag
